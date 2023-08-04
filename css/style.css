@@ -1,0 +1,295 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+div img {
+    display: block;
+    width: 100%;
+}
+.container {
+    display: flex;
+    margin: auto;
+    max-width: 992px;
+    width: 100%;
+    min-width: 320px;
+   
+}
+header {
+    background-color: #000000;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color:aliceblue;
+    padding-bottom: 40px;
+    padding-top: 10px;
+}
+
+header .list-items {
+    display: flex;
+    max-width: 260px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .menu {
+    justify-content: space-between;
+}
+
+header .logo { 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #3f3b35;
+    transition: all 0.5s; 
+}
+
+header .logo:hover {
+    width: 180px;
+    height: 180px;
+}
+
+.list-items li a {
+    color:aliceblue;
+    padding:5px;
+    margin-top: 5px;
+    
+}
+.apresentacao {
+    height: 60vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao .texto-apresentacao {
+    height: 100px;
+  }
+
+
+.texto-apresentacao h1 {
+    color: #e48518;
+    font-size: 48px;
+    margin:10px;
+}
+
+.texto-apresentacao p {
+    text-align:center;
+}
+.btn {
+    background-color:#e48518;
+    color:aliceblue;
+    text-align: center;
+    border-radius: 30px;
+    width:220px;
+    display:block;
+    text-decoration:none;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    width: 260px;
+}
+
+#quem-somos {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+#quem-somos h2 {
+    color:#e48518;
+    display:flex;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+#quem-somos h2 ::before {
+    content: " ";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color:#e48518;
+    position: relative;
+}
+#quem-somos p {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img {
+    min-width: 420px;
+    border-radius: 20%;
+}
+.container-externo {
+    background-color: #e48518;
+}
+
+#menu {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#menu h2 {
+    color:aliceblue;
+    padding-bottom: 20px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.list-cardapio {
+    display:flex;
+    justify-content: space-between;
+}
+
+.list-cardapio .item-cardapio {
+    text-align:center;
+}
+
+.item-cardapio a {
+    background-color: aliceblue;
+    color: #e48518;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    text-align:center;
+    font-weight: 700;
+}
+
+.item-cardapio a:hover{
+    background-color: aliceblue;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.item-cardapio p {
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 20px;
+    color:aliceblue;
+}
+
+.item-cardapio img {
+    width: 80%;
+    margin: auto;
+    transition: all 0.5s;
+}
+
+.item-cardapio img:hover {
+    width: 90%;
+}
+
+
+#contato {
+    flex-direction: column;
+    min-height: 25vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.list-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item-contato {
+    flex: 1;
+    border: 5px solid #e48518;
+    margin-right: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    max-width: 240px;
+    
+}
+
+.item-contato li a {
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #000000;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+footer .footer {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue;
+    font-weight: 300;
+}
+
+footer .logo-footer {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #e48518;
+    
+}
+
+/* mobile */
+@media(max-width: 992px){
+    .container {
+        flex-direction:column;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+    .apresentacao .texto-apresentacao {
+        width: 100%;
+    
+    }
+    #quem-somos {
+        flex-direction: column;
+    }
+
+    #quem-somos img {
+        min-width: 320px;
+        margin:auto;
+    }
+    .list-cardapio {
+        flex-direction: column;
+    }
+    .item-cardapio img {
+        width: 50%;
+        margin:auto;
+    }
+
+    .list-contato {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+    .list-contato .item-contato {
+        max-width: 90%;
+        margin:auto;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
